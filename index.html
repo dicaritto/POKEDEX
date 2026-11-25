@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedéx</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex Libarary</title>
+    <!--Fuente Pokemon-->
+    <link href="https://fonts.cdnfonts.com/css/pok" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="pokedex">
+      <!-- Lucesitas  Pokédex -->
+      <header class="pokedex-top">
+        <div class="lente-azul"></div>
+        <div class="luces-pequenas">
+          <span class="luz roja"></span>
+          <span class="luz amarilla"></span>
+          <span class="luz verde"></span>
+        </div>
+      </header>
+
+      <section class="pantalla-contenedor">
+        <h1 class="titulo-pokemon">POKÉDEX</h1>
+        <p class="subtitulo">¡Atrápalos ya! Escribe un nombre:</p>
+
+        <div class="buscador">
+          <input
+            type="text"
+            id="pokemonName"
+            placeholder="Ej: pikachu, snorlax..."
+          />
+          <button id="searchBtn">¡Atrápalo!</button>
+        </div>
+
+        <article
+          id="pokemonCard"
+          class="pokemon-card"
+          style="display: none"
+        ></article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+</body>
+</html>

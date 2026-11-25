@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  /* Fondo rayado */
+  background: repeating-linear-gradient(
+    45deg,
+    #3b4cca,
+    #3b4cca 25px,
+    #2a3899 25px,
+    #2a3899 50px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Carcasa roja Pokédex */
+.pokedex {
+  background-color: #dc0a2d;
+  border: 5px solid #1b1b1b;
+  border-radius: 24px 24px 24px 60px;
+  box-shadow: 12px 12px 0px #1b1b1b;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Lucesitas Pokédex */
+.pokedex-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #1b1b1b;
+  margin-bottom: 20px;
+}
+/* Lente lector Pokédex */
+.lente-azul {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #a6f0ff, #19a7ce 55%, #0b5ed7);
+  border: 4px solid #ffffff;
+  outline: 4px solid #1b1b1b;
+  box-shadow: 3px 3px 0px #1b1b1b;
+}
+
+.luces-pequenas {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.luz {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #1b1b1b;
+}
+
+.luz.roja {
+  background-color: #ff3b30;
+}
+.luz.amarilla {
+  background-color: #ffcb05;
+}
+.luz.verde {
+  background-color: #4cd964;
+}
+
+/* Pantalla Pokédex */
+.pantalla-contenedor {
+  background-color: #f8f9fa;
+  border: 4px solid #1b1b1b;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Título estilo Pokémon */
+.titulo-pokemon {
+  font-family: "Pokemon Solid", sans-serif;
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  color: #ffcb05;
+  -webkit-text-stroke: 8px #2a75bb;
+  paint-order: stroke fill;
+  text-shadow: 4px 4px 0px #1d2c5e;
+}
+
+.subtitulo {
+  margin: 0 0 15px;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Buscador */
+.buscador {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+input {
+  width: 65%;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid #1b1b1b;
+  border-radius: 10px;
+  background-color: #fffde7;
+  outline: none;
+}
+
+input:focus {
+  background-color: #fff59d;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffcb05;
+  color: #1d2c5e;
+  border: 3px solid #1b1b1b;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px #1b1b1b;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  color: #ffcb05;
+  background-color: #2a75bb;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1b1b1b;
+}
+
+/* Tarjeta del Pokémon*/
+.pokemon-card {
+  margin-top: 22px;
+  padding: 18px;
+  background: linear-gradient(135deg, #fff9c4 0%, #ffe082 50%, #fff59d 100%);
+  border: 6px solid #ffcb05;
+  outline: 4px solid #1b1b1b;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0px #1b1b1b;
+  text-align: center;
+}
+
+.pokemon-card h2 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  color: #1d2c5e;
+  background-color: #ffcb05;
+  border: 3px solid #1b1b1b;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+/* Pokébola del Pokémon */
+.pokemon-card img {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 4px solid #1b1b1b;
+  background: linear-gradient(
+    to bottom,
+    #ef5350 0%,
+    #ef5350 50%,
+    #1b1b1b 45%,
+    #1b1b1b 53%,
+    #ffffff 53%,
+    #ffffff 100%
+  );
+  box-shadow: 4px 4px 0px #1b1b1b;
+  margin-bottom: 12px;
+}
+
+.pokemon-card p {
+  background-color: #ffffff;
+  border: 2px solid #1b1b1b;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #1b1b1b;
+}
